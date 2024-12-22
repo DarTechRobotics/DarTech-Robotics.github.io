@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos a DarTech Robotics</title>
+
+    <!-- Vinculamos el archivo CSS -->
+    <link rel="stylesheet" href="dar.css">
+</head>
+<body style="background-color: rgb(17, 80, 110); color: white; font-family: Arial, sans-serif; padding: 20px;">
+
+    <!-- Cabecera con navegación -->
+    <header>
+        <div class="user-info">
+            <span id="username">Usuario</span>
+            <span id="contact-number">
+                <a href="https://wa.me/593988124506" target="_blank" id="whatsapp-link">+593 988124506</a>
+            </span>
+        </div>
+    </header>
+
+    <div class="logo">
+        <a href="javascript:location.reload();">
+            <img src="Captura de pantalla 2024-12-07 a la(s) 12.31.40 a. m..png" width="100px" alt="DarTech Robotics" id="logo-img">
+        </a>
+    </div>
+
+    <!-- Título de la página -->
+    <div class="title">
+        <h1>DarTech Robotics™</h1>
+    </div>
+
+    <!-- Sección principal -->
+    <main>
+
+        <section>
+            <h2>¡Crea tu cuenta!</h2>
+            <form id="create-account-form">
+                <input type="text" id="username-input" name="username" placeholder="Nombre de usuario" required>
+                <input type="email" name="email" placeholder="Correo electrónico" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <input type="submit" value="Crear cuenta">
+            </form>
+            <p>¿Ya tienes cuenta? <a href="dare.html">Inicia sesión</a></p>
+        </section>
+
+        <!-- Conócenos -->
+        <section class="Conocenos">
+            <h1>¡Conócenos!</h1>
+            <p>
+                Dartech Robotics es una microempresa innovadora dedicada al desarrollo y la implementación de soluciones robóticas avanzadas para una variedad de sectores...
+            </p>
+            <img src="conoce.png" width="300px" alt="Conócenos">
+            <input type="button" value="Conoce más" onclick="TXimg();" />
+        </section>
+
+        <!-- Qué ofrecemos -->
+        <section class="ofrecemos">
+            <h1>¿Qué ofrecemos como microempresa?</h1>
+            <div class="opc">
+                <div class="contenedorImagen">
+                    <img src="capacitaciones.png" width="300px" alt="Capacitación">
+                    <h2>Capacitación</h2>
+                    <p>Se ofrece capacitaciones a todo el ámbito relacionado con robótica. Precio: $10 - $20</p>
+                    <a href="https://wa.me/593988124506?text=Me%20interesa%20la%20Robótica" target="_blank">
+                        <button>❗❗Me gustaría saber sobre las capacitaciones.❗❗</button>
+                    </a>
+                </div>
+                <div class="contenedorImagen">
+                    <img src="Venta de diseños.png" width="300px" alt="Venta de productos">
+                    <h2>Venta de Robots</h2>
+                    <p>Venta de robots para competencias profesionales. ¡Es tu oportunidad! Precio: Desde $80</p>
+                    <a href="https://wa.me/593988124506?text=Me%20interesa%20la%20Venta%20de%20Productos" target="_blank">
+                        <button>❗❗Quiero más información sobre la venta de robots 🤖❗❗</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Más servicios -->
+        <section class="fondo2">
+            <div class="fondo3">
+                <h1>Sobre nosotros!!</h1>
+                <p>
+                    Con una visión orientada a la innovación constante, Dartech Robotics busca ser un referente en el sector...
+                </p>
+                <img id="Imagen3" src="imagen4.png.jpeg" width="300px" alt="Sobre nosotros">
+                <input type="button" value="Conocenos!!" onclick="TXimg2();" />
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página con derechos de autor -->
+    <footer>
+        <div class="DerechosDeAutor">
+            <h2>Derechos de autor de DarTech Robotics.</h2>
+            <p>
+                Todos los contenidos de este sitio web, incluyendo textos, imágenes, logotipos, diseños, códigos y demás materiales, son propiedad exclusiva de "DarTech Robotics"...
+            </p>
+            <p>Derechos de autor © 2024-12-10</p>
+        </div>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="dar.js"></script>
+
+    <script>
+        // Verificar si ya hay un usuario guardado en localStorage
+        if (localStorage.getItem('username')) {
+            document.getElementById('username').textContent = localStorage.getItem('username');
+        }
+
+        // Cambiar imagen en las secciones de "Conócenos"
+        function TXimg() {
+            document.getElementById('Imagen').src = 'Brown and Yellow Warm and Youthful Skincare Product Review Instagram Post.png';
+        }
+
+        function TXimg1() {
+            document.getElementById('Imagen2').src = 'Venta Diseños.png';
+        }
+
+        function TXimg2() {
+            document.getElementById('Imagen3').src = 'imagen4.0.png.jpeg';
+        }
+    </script>
+</body>
+</html>
 
