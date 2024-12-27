@@ -94,16 +94,7 @@ form input[type="submit"]:hover {
 }
 
 /* Sections */
-.Conocenos, .fondo2, .fondo3, .fondo4 {
-    background-color: rgb(155, 146, 146);
-    text-align: center;
-    border-radius: 200px;
-    padding: 20px;
-    margin: 0 auto;
-    width: 90%;
-    max-width: 900px;
-    margin-bottom: 30px;
-}
+
 
 .Conocenos .p1, .fondo2 .p2, .fondo3 .p3 {
     font-size: 1.1rem;
