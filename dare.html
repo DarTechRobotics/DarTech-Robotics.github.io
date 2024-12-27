@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+ 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="dar.js"></script>
-  <link rel="stylesheet" href="dar.css">
-  <title>DarTech Robotics</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="dar.js"></script>
+    <link rel="stylesheet" href="dar.css">
+    <title>DarTech Robotics</title>
 </head>
 <body>
     <!-- Barra superior con el número de contacto y el nombre del usuario -->
@@ -15,6 +18,8 @@
             <span id="contact-number">
                 <a href="https://wa.me/593988124506" target="_blank" id="whatsapp-link">+593 988124506</a>
             </span>
+
+
         </div>
     </header>
 
@@ -39,7 +44,7 @@
                 Dartech Robotics es una microempresa innovadora dedicada al desarrollo y la implementación de soluciones robóticas avanzadas para una variedad de sectores. Nuestra misión es ofrecer productos y servicios que permitan a nuestros clientes automatizar procesos, aumentar su eficiencia y mejorar su competitividad.
             </p>
         </div>
-        <div class="imagen1">
+        <div  class="imagen1">
             <img id="Imagen" src="conoce.png" width="300px">
         </div>
         <div class="boton1">
@@ -54,7 +59,7 @@
             </p>
         </div>
         <div class="imagen2">
-            <img id="Imagen2" src="Venta de diseños.png" width="300px"/>
+            <img id="Imagen2" src="Venta de diseños.png" width="300px"/>
         </div>
         <div class="boton2">
             <p> <input type="button" value="Conocer más" onclick="TXimg1();"></p>
@@ -82,6 +87,7 @@
     <div class="fondo4">
         <h1 class="ofrecemos">¿Qué ofrecemos como microempresa?</h1>
         <div class="opc">
+            <!-- Robótica -->
             <div class="contenedorImagen">
                 <img src="capacitaciones.png" width="300px" alt="Robótica">
                 <h2>Capacitación</h2>
@@ -90,7 +96,8 @@
                     <button class="whatsapp-button">❗❗Me gustaría saber sobre las capacitaciones.❗❗</button>
                 </a>
             </div>
-
+            
+            <!-- Venta de Productos -->
             <div class="contenedorImagen">
                 <img src="venta de robots.png" width="300px" alt="Venta de productos">
                 <h2>Venta de Robots</h2>
@@ -100,6 +107,7 @@
                 </a>
             </div>
 
+            <!-- Asesoría -->
             <div class="contenedorImagen">
                 <img src="Asesoria online.png" width="300px" alt="Asesoría">
                 <h2>Servicios de Asesoría</h2>
@@ -109,6 +117,7 @@
                 </a>
             </div>
 
+            <!-- Nuevos servicios (Sección 4) -->
             <div class="contenedorImagen">
                 <img src="Brown and Yellow Warm and Youthful Skincare Product Review Instagram Post.png" width="300px" alt="Nuevo Servicio 1">
                 <h2>Desarrollo de Proyectos</h2>
@@ -118,7 +127,8 @@
                 </a>
             </div>
 
-            <div class="contenedorImagen">
+            <!-- Nuevos servicios (Sección 5) -->
+            <div class="contenedorImagen"> 
                 <img src="impresiones 3d.png" width="300px" alt="Nuevo Servicio 2">
                 <h2>Impreciones 3d</h2>
                 <p>Ofrecemos la facilidad a tu acceso a piesas de impresion 3d. Precio: ¨Por horas¨</p>
@@ -127,8 +137,9 @@
                 </a>
             </div>
 
+            <!-- Nuevos servicios (Sección 6) -->
             <div class="contenedorImagen">
-                <img src="Venta Diseños.png" width="300px" alt="Nuevo Servicio 3">
+                <img src="Venta Diseños.png" width="300px" alt="Nuevo Servicio 3">
                 <h2>Diseños en 3d</h2>
                 <p>Te creamos , te damos diseños personalisados , libre a tu imaginacion. Precio: $5 - $50</p>
                 <a href="https://wa.me/593988124506?text=Me%20interesa%20la%20consultoría%20en%20robótica" target="_blank">
@@ -153,7 +164,7 @@
         // Cambiar imagen de la segunda sección
         TXimg1 = function() {
             let cmpImagen = document.getElementById('Imagen2');
-            cmpImagen.src = 'Venta Diseños.png';
+            cmpImagen.src = 'Venta Diseños.png';
         }
 
         // Cambiar imagen de la tercera sección
@@ -175,5 +186,6 @@
             <p>Derechos de autor © 2024-12-10</p>
         </div>
     </div>
+
 </body>
 </html>
