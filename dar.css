@@ -16,7 +16,6 @@ a {
     color: #fff;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -38,7 +37,6 @@ header .user-info {
     font-size: 1rem;
 }
 
-/* Logo */
 .logo {
     text-align: center;
     margin-left: 750px;
@@ -63,79 +61,126 @@ header .user-info {
     font-size: 3rem;
 }
 
-/* Responsive: Formulario */
-.container {
+.Conocenos {
+    background-color: rgb(155, 146, 146);
     text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
+    border-radius: 200px;
     padding: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
-form input[type="text"], form input[type="email"], form input[type="password"] {
-    padding: 10px;
-    margin: 10px 0;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 1rem;
+.p1 {
+    text-align: center;
+    font-size: 1.1rem;
 }
 
-form input[type="submit"] {
-    padding: 12px 18px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-    background-color: #555;
-}
-
-/* Sections */
-
-
-
-
-/* Imagenes */
-.imagen1, .imagen2, .imagen3 {
+.imagen1 {
     text-align: center;
 }
 
-.boton1, .boton2, .boton3 {
+.boton1 {
     text-align: center;
     margin-top: 20px;
 }
 
-.boton1 input, .boton2 input, .boton3 input {
+.boton1 input {
     padding: 10px 20px;
     background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton1 input:hover {
+    background-color: #555;
+}
+
+/* Sección "Qué ofrecemos" */
+.ofrecemos {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+}
+
+.opc {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contenedorImagen {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.contenedorImagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.whatsapp-button {
+    padding: 10px 20px;
+    background-color: #25d366;
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
 }
 
-.boton1 input:hover, .boton2 input:hover, .boton3 input:hover {
-    background-color: #555;
+.whatsapp-button:hover {
+    background-color: #128c7e;
 }
 
-/* Footer */
-.DerechosDeAutor {
+.fondo2, .fondo3{
+    background-color: rgb(155, 146, 146);
+    border-radius: 500px;
+}
+
+.p2, .p3, .p4, .p5, .p6 {
+    margin-left: 550px;
+    margin-right: 550px;
+}
+
+.imagen2, .imagen3, .imagen4, .imagen5, .imagen6 {
+    margin-left: 700px;
+}
+
+.boton2, .boton3, .boton4, .boton5, .boton6 {
+    margin-left: 810px;
+}
+
+.Sobre {
+    margin-left: 175px;
+}
+
+.DerechosDeAutor{
     padding-top: 30px;
     background-color: #333;
+    margin-left: 20px;
+    margin-top: 60px;
     border-radius: 30px;
-    text-align: center;
-    padding: 20px;
-    color: white;
+    padding-left: 20px;
 }
 
-.DerechosDeAutor h2 {
-    font-size: 1.2rem;
+.TipoP{
+    display: flex;
+    flex: 1;
+    justify-content:center; 
+    margin-right: 1100px;
 }
 
-/* Responsive: Ajustes en dispositivos pequeños */
+.Fecha{
+    margin-left: 680px;
+}
+
 @media (max-width: 768px) {
     .logo {
         width: 120px;
